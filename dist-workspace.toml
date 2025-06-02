@@ -28,16 +28,6 @@ install-path = "CARGO_HOME"
 install-updater = false
 # Homebrew can only install the latest version of GDAL, which might not be
 # supported by gdal-sys yet
-feature = ["bindgen"]
+feature = ["bundled"]
 
-[dist.dependencies.homebrew]
-gdal = "*"
-bindgen = "*"
-
-[dist.dependencies.apt]
-libgdal-dev = "*"
-bindgen = "*"
-
-[dist.dependencies.chocolatey]
-gdal = "*"
 
