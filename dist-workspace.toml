@@ -36,7 +36,7 @@ bindgen = "*"
 
 [dist.dependencies.apt]
 libgdal-dev = "*"
-rust-bindgen = "*"
+bindgen = "*"
 
 [dist.dependencies.chocolatey]
 gdal = "*"
