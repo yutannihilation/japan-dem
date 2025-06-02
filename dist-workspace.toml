@@ -28,7 +28,7 @@ install-path = "CARGO_HOME"
 install-updater = false
 
 [dist.dependencies.homebrew]
-gdal = "3.10"  # gdal-sys doesn't support 3.11 yet
+gdal = { version = "3.10" }  # gdal-sys doesn't support 3.11 yet
 
 [dist.dependencies.apt]
 libgdal-dev = "*"
