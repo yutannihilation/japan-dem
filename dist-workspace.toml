@@ -26,7 +26,7 @@ install-path = "CARGO_HOME"
 # Whether to install an updater program
 install-updater = false
 # Use the bundled version of GDAL
-feature = ["bundled"]
+features = ["bundled"]
 
 [dist.dependencies.homebrew]
 
