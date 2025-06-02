@@ -26,12 +26,17 @@ targets = [
 install-path = "CARGO_HOME"
 # Whether to install an updater program
 install-updater = false
+# Homebrew can only install the latest version of GDAL, which might not be
+# supported by gdal-sys yet
+feature = ["bindgen"]
 
 [dist.dependencies.homebrew]
-gdal = { version = "3.10" }  # gdal-sys doesn't support 3.11 yet
+gdal = "*"
+bindgen = "*"
 
 [dist.dependencies.apt]
 libgdal-dev = "*"
+rust-bindgen = "*"
 
 [dist.dependencies.chocolatey]
 gdal = "*"

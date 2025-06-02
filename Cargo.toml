@@ -26,6 +26,7 @@ crate-type = ["cdylib", "rlib"]
 [features]
 default = []
 python = ["pyo3"]
+bindgen = ["gdal/bindgen"]
 
 [dependencies]
 pyo3 = { version = "0.22", features = ["extension-module", "abi3-py39"], optional = true }
