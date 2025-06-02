@@ -1,11 +1,11 @@
 [package]
 name = "japan-dem"
-version = "0.1.3"
+version = "0.1.4-rc.1"
 edition = "2021"
 authors = ["nokonoko1203 <email@example.com>"]
 description = "A CLI tool to convert Japan DEM XML to GeoTIFF."
 readme = "README.md"
-repository = "https://github.com/nokonoko1203/japan-dem"
+repository = "https://github.com/yutannihilation/japan-dem"
 license = "MIT"
 keywords = ["gis", "dem", "geotiff", "japan", "gsi"]
 categories = ["command-line-utilities", "science::geo"]
