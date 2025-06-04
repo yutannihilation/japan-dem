@@ -48,6 +48,10 @@ jobs:
         with:
           toolchain: ${{ matrix.rust }}
 
+      - name: Install dependencies (Windows)
+        if: runner.os == 'Windows'
+        run: choco install sqlite
+
       - name: Run tests
         run: |
           # to avoid "long path" error on Windows
