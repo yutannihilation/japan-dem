@@ -29,9 +29,6 @@ install-updater = false
 # By default, cargo-dist uses --workspace, but we want to build only 
 # cli to avoid "output filename collision." error.
 precise-builds = true
-# By default, cargo-dist statically links MSVCRT, but it seems this
-# conflicts with the GDAL compiled from the bundled source...
-msvc-crt-static = false
 
 [dist.dependencies.homebrew]
 
