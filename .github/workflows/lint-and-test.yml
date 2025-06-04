@@ -2,7 +2,7 @@ name: Lint and Test
 
 on:
   push:
-    branches: [ "*" ]
+    branches: [ refactor/cli-tmp ]
   pull_request:
     branches: [ main ]
 
