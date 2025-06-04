@@ -2,9 +2,9 @@ name: Lint and Test
 
 on:
   push:
-    branches: [ refactor/cli-tmp ]
+    branches: [refactor/cli-tmp]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 env:
   CARGO_TERM_COLOR: always
@@ -49,7 +49,11 @@ jobs:
           toolchain: ${{ matrix.rust }}
 
       - name: Run tests
-        run: cargo test --features bundled --verbose
+        run: |
+          # to avoid "long path" error on Windows
+          git config --global core.longpaths true
+
+          cargo test --features bundled --verbose
 
   # # Test Python bindings
   # test-python:
