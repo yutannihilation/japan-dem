@@ -1,9 +1,7 @@
 # cf. https://github.com/astral-sh/cargo-dist/pull/36#issuecomment-2895135231
-[target.'cfg(target_os = "windows")']
+[target.x86_64-pc-windows-msvc]
 rustflags = [
     "-Ctarget-feature=+crt-static",
     "-Clink-args=/DEFAULTLIB:ucrt.lib",
-    "-Clink-args=/NODEFAULTLIB:vcruntime.lib",
-    "-Clink-args=/NODEFAULTLIB:msvcrt.lib",
     "-Clink-args=/NODEFAULTLIB:libucrt.lib",
 ]

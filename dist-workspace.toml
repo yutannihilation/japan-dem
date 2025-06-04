@@ -30,6 +30,12 @@ install-updater = false
 # cli to avoid "output filename collision." error.
 precise-builds = true
 
+# Set RUSTFLAGS
+# cf.
+#  - https://github.com/astral-sh/cargo-dist/pull/36#issuecomment-2895135231
+#  - https://github.com/axodotdev/cargo-dist/issues/1571
+github-build-setup = "../cargo-dist-envvars.yml"
+
 [dist.dependencies.homebrew]
 
 
