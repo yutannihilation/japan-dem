@@ -77,3 +77,6 @@ lto = "thin"
 # TODO: remove this when the pull request gets merged into the upstream
 [patch.crates-io]
 gdal = { git = "https://github.com/yutannihilation/gdal-rs", branch = "feat/expose-bundled-feature" }
+# use crates.io version to avoid git submodule error
+gdal-sys = { version = "*" }
+gdal-src = { version = "*" }
